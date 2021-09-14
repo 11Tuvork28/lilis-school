@@ -9,3 +9,10 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+  production:
+    build: .
+    command: runner.sh
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
