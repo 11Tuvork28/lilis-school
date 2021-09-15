@@ -11,8 +11,8 @@ services:
       - "8000:8000"
   production:
     build: .
-    command: runner.sh
+    command: uwsgi --http "0.0.0.0:8800" --module lilisSchool.wsgi --master --processes 4 --threads 2
     volumes:
       - .:/code
     ports:
-      - "8000:8000"
+      - "8800:8800"
