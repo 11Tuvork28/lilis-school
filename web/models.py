@@ -22,7 +22,7 @@ class Blog(models.Model):
     Text = models.TextField(max_length=2000)
     Bild = models.ImageField(upload_to="pictures/")
     pub_date = models.DateField()
-    TimeToRead = models.TimeField(default=timezone.now)
+    TimeToRead = models.IntegerField()
 
 class Sponsoren(models.Model):
     Name = models.CharField(max_length=50)
