@@ -184,41 +184,22 @@
       Setzen Sie sich mit uns in Verbindung
     </h2>
     <div class="col">
-      <form class="vg-contact-form">
+      <form class="vg-contact-form" methode="POST">
         <div class="form-row">
           <div class="col-12 mt-3 wow fadeInUp">
-            <input
-              class="form-control"
-              type="text"
-              name="Name"
-              placeholder="Ihr Name"
-            />
+                {% csrf_token %}
+            {{ form.sender_name }}
           </div>
           <div class="col-6 mt-3 wow fadeInUp">
-            <input
-              class="form-control"
-              type="text"
-              name="Email"
-              placeholder="Ihre Email Adresse"
-            />
+            {{ form.from_email }}
           </div>
           <div class="col-6 mt-3 wow fadeInUp">
-            <input
-              class="form-control"
-              type="text"
-              name="Subject"
-              placeholder="Subject"
-            />
+            {{ form.subject }}
           </div>
           <div class="col-12 mt-3 wow fadeInUp">
-            <textarea
-              class="form-control"
-              name="Message"
-              rows="6"
-              placeholder="Sagen Sie uns was wir für Sie tun können"
-            ></textarea>
+            {{ form.message }}
           </div>
-          <button type="submit" class="btn btn-theme mt-3 wow fadeInUp mx-auto">
+          <button class="btn btn-theme mt-3 wow fadeInUp mx-auto">
             Senden
           </button>
         </div>
