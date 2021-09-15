@@ -62,7 +62,7 @@
             <img src="{{ post.Bild.url }}" alt="" />
           </div>
           <div class="caption">
-            <a href="#" class="post-title">{{ post.HeadLine }}</a>
+            <a href="{% url "blog" blog_id=post.id %}#blog" class="post-title">{{ post.HeadLine }}</a>
             <span class="post-date"
               ><span class="sr-only">Veröffentlicht</span> {{ post.pub_date }}
             </span>
