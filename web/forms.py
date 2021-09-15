@@ -4,7 +4,7 @@ class ContactForm(forms.Form):
     sender_name = forms.CharField(required=True,
      widget=forms.TextInput(attrs={'placeholder': 'Ihr name', 'type': 'text','class': 'form-control'})
     )
-    from_email = forms.EmailField(
+    email = forms.EmailField(
         required=True,
         widget=forms.EmailInput(attrs={'placeholder': 'Ihre Email Adresse', 'type': 'email','class': 'form-control'}) )
     subject = forms.CharField(required=True,
