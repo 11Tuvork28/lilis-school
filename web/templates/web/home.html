@@ -181,18 +181,17 @@
       Sie erhalten ein Kopie per Email
     </h3>
     <div class="col">
-      <form class="vg-contact-form" methode="POST">
-        <div class="form-row">
+      <form class="vg-contact-form form-row" action="" method="POST">
+            {% csrf_token %}
           <div class="col-12 mt-3 wow fadeInUp">
-            {% csrf_token %} {{ form.sender_name }}
+           {{ form.sender_name }}
           </div>
           <div class="col-6 mt-3 wow fadeInUp">{{ form.from_email }}</div>
           <div class="col-6 mt-3 wow fadeInUp">{{ form.subject }}</div>
           <div class="col-12 mt-3 wow fadeInUp">{{ form.message }}</div>
-          <button class="btn btn-theme mt-3 wow fadeInUp mx-auto">
+          <button type="submit" class="btn btn-theme mt-3 wow fadeInUp mx-auto">
             Senden
           </button>
-        </div>
       </form>
     </div>
   </div>
