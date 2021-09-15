@@ -25,7 +25,7 @@ SECRET_KEY = '7289Q/ZSAHU"6219&%$§!"WFS)1huz7ap48efa0wus-d6_fgl75fq=(4np$f5vw7p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1","lilisschool.xamh.de","172.20.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1","lilisschools.org","lilisschool.xamh.de","172.20.0.1"]
 
 
 # Application definition

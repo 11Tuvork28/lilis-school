@@ -29,6 +29,7 @@ def index(request):
         "roadmap": Roadmap.objects.all(),
         "kontakt": Kontakt.objects.filter(Aktuell=True),
         "form": ContactForm(),
+    }
     return render(request=request, template_name="web/home.html", context=context)
 
  
