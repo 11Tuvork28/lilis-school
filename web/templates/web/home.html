@@ -39,14 +39,10 @@
         />
       </div>
       <div class="col-lg-6 offset-lg-1 wow fadeInRight">
-        <h2 class="fw-light">
-          {{ text.HeadLine }}
-        </h2>
-         <h5 class="fg-theme mb-3"> {{ text.SmallHeadLine }}</h5>
+        <h2 class="fw-light">{{ text.HeadLine }}</h2>
+        <h5 class="fg-theme mb-3">{{ text.SmallHeadLine }}</h5>
       </div>
-       <p class="text-muted">
-        {{ text.Text }}
-       </p>
+      <p class="text-muted">{{ text.Text }}</p>
       {% endfor %}
     </div>
   </div>
@@ -105,14 +101,15 @@
   </div>
 </div>
 
-
 <!-- Wie können Sie helfen? -->
 <div class="vg-page page-testimonial" id="helping">
   <div class="container">
     <div class="text-center">
       <div class="badge badge-subhead wow fadeInUp">Mitwirken</div>
     </div>
-    <h2 class="text-center fw-normal wow fadeInRight">Wie können Sie helfen?</h2>
+    <h2 class="text-center fw-normal wow fadeInRight">
+      Wie können Sie helfen?
+    </h2>
     <div class="row justify-content-center mt-5 wow fadeInUp">
       <div class="col-md-9"></div>
     </div>
@@ -124,7 +121,9 @@
     <div class="text-center">
       <div class="badge badge-subhead wow fadeInUp">Fotos</div>
     </div>
-    <h2 class="text-center fw-normal wow fadeInUp">Hier können Sie einige Fotos sehen</h2>
+    <h2 class="text-center fw-normal wow fadeInUp">
+      Hier können Sie einige Fotos sehen
+    </h2>
     <div class="row justify-content-center mt-5 wow fadeInUp">
       <div class="col-md-9">
         <div class="owl-carousel testi-carousel owl-loaded owl-drag">
@@ -137,23 +136,18 @@
                 width: 3060px;
               "
             >
-            {% for item in Fotos %}
+              {% for item in Fotos %}
               <div class="owl-item" style="width: 510px">
                 <div class="item">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="img-place">
-                        <img
-                          src="{{ item.Bild.url }}"
-                          alt=""
-                        />
+                        <img src="{{ item.Bild.url }}" alt="" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="caption">
-                        <div class="testi-content">
-                          {{ item.Beschreibung }}
-                        </div>
+                        <div class="testi-content">{{ item.Beschreibung }}</div>
                       </div>
                     </div>
                   </div>
@@ -183,22 +177,18 @@
     <h2 class="text-center fw-normal wow fadeInUp">
       Setzen Sie sich mit uns in Verbindung
     </h2>
+    <h3 class="text-center fs-small wow fadeInUp mt-3">
+      Sie erhalten ein Kopie per Email
+    </h3>
     <div class="col">
       <form class="vg-contact-form" methode="POST">
         <div class="form-row">
           <div class="col-12 mt-3 wow fadeInUp">
-                {% csrf_token %}
-            {{ form.sender_name }}
+            {% csrf_token %} {{ form.sender_name }}
           </div>
-          <div class="col-6 mt-3 wow fadeInUp">
-            {{ form.from_email }}
-          </div>
-          <div class="col-6 mt-3 wow fadeInUp">
-            {{ form.subject }}
-          </div>
-          <div class="col-12 mt-3 wow fadeInUp">
-            {{ form.message }}
-          </div>
+          <div class="col-6 mt-3 wow fadeInUp">{{ form.from_email }}</div>
+          <div class="col-6 mt-3 wow fadeInUp">{{ form.subject }}</div>
+          <div class="col-12 mt-3 wow fadeInUp">{{ form.message }}</div>
           <button class="btn btn-theme mt-3 wow fadeInUp mx-auto">
             Senden
           </button>
