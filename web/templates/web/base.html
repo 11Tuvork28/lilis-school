@@ -94,7 +94,7 @@
               <span class="ti-menu"></span>
             </button>
             <div class="collapse navbar-collapse" id="main-navbar">
-            {% if request.get_full_path  == "/blog" %}
+            {% if request.resolver_match.url_name == "blog" %}
               <ul class="navbar-nav items-center text-center">
                 <li class="nav-item active">
                   <a href="{% url 'index' %}#home" class="nav-link" data-animate="scrolling"
@@ -133,7 +133,7 @@
                 </li>
               </ul>
               {% else %}
-                            <ul class="navbar-nav items-center text-center">
+              <ul class="navbar-nav items-center text-center">
                 <li class="nav-item active">
                   <a href="#home" class="nav-link" data-animate="scrolling"
                     >Home</a
