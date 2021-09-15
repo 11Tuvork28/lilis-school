@@ -94,6 +94,7 @@
               <span class="ti-menu"></span>
             </button>
             <div class="collapse navbar-collapse" id="main-navbar">
+            {% if request.get_full_path  == "/blog" %}
               <ul class="navbar-nav items-center text-center">
                 <li class="nav-item active">
                   <a href="{% url 'index' %}#home" class="nav-link" data-animate="scrolling"
@@ -131,6 +132,45 @@
                   >
                 </li>
               </ul>
+              {% else %}
+                            <ul class="navbar-nav items-center text-center">
+                <li class="nav-item active">
+                  <a href="#home" class="nav-link" data-animate="scrolling"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link" data-animate="scrolling"
+                    >Wer & wo sind wir?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#blog" class="nav-link" data-animate="scrolling"
+                    >News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#RoadMap" class="nav-link" data-animate="scrolling"
+                    >Was ist unser Ziel?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#helping" class="nav-link" data-animate="scrolling"
+                    >Wie können Sie helfen</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#media" class="nav-link" data-animate="scrolling"
+                    >Fotos & Videos </a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link" data-animate="scrolling"
+                    >Kontakt</a
+                  >
+                </li>
+              </ul>
+              {% endif %}
             </div>
           </div>
         </div>
