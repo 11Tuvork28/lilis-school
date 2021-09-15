@@ -129,5 +129,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.xamh.de'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'kontakt@lilisschool.org'
-EMAIL_HOST_PASSWORD = '&,hEmicaLP,45'
+EMAIL_HOST_USER = 'kontakt@lilisschools.org'
+EMAIL_HOST_PASSWORD = 'brdfat65mc'
