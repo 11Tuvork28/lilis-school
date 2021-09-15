@@ -29,8 +29,14 @@ def index(request):
     return render(request=request, template_name="web/home.html", context=context)
 
  
-def blog(request):
-    context = {
-        "blogs": Blog.objects.all()
-    }
-    return render(request=request, template_name="web/blog.html", context=context)
+def blog(request, blog_id: int = None):
+    if blog_id is None:
+        context = {
+            "blogs": Blog.objects.all()
+        }
+        return render(request=request, template_name="web/blog.html", context=context)
+    else:
+        context = {
+            "blog": Blog.objects.filter(id=blog_id).get()
+        }
+        return render(request=request, template_name="web/ReadBlog.html", context=context)
