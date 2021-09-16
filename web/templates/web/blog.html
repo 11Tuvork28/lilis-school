@@ -6,7 +6,10 @@
       <div class="col-md-6 col-lg-4">
         <div class="card">
           <div class="img-place">
-            <img src="{{ post.Bild.url }}" alt="" />
+            <img src="{{ post.Bild1.url }}" alt="" />
+          </div>
+          <div class="img-place">
+            <img src="{{ post.Bild2.url }}" alt="" />
           </div>
           <div class="caption">
             <a href="{% url "blog" blog_id=post.id %}#blog" class="post-title">{{ post.HeadLine }}</a>
