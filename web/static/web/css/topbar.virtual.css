@@ -52,14 +52,6 @@
 
 
 /* Page */
-@media only screen and (max-width: 1200px) {
-  .page-home {  
-    background-image: url(../img/wir.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
 .vg-page {
   position: relative;
   display: block;
@@ -76,7 +68,6 @@
   background-image: url(../img/wir.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: none;
 }
 
 .page-home::before {
@@ -490,7 +481,14 @@
   border-radius: 0 4px 4px 0;
   z-index: 9;
 }
-
+@media only screen and (max-width: 1200px) {
+  .page-home {  
+    background-image: url(../img/wir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 /* Theme color style */
 /* Theme Red */
 .theme-red .badge-subhead {
