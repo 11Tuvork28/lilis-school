@@ -20,7 +20,8 @@ class Fotos(models.Model):
 class Blog(models.Model):
     HeadLine = models.TextField(max_length=100)
     Text = models.TextField(max_length=2000)
-    Bild = models.ImageField(upload_to="pictures/")
+    Bild1 = models.ImageField(upload_to="pictures/", blank=True)
+    Bild2 = models.ImageField(upload_to="pictures/", blank=True)
     pub_date = models.DateField()
     TimeToRead = models.IntegerField()
 

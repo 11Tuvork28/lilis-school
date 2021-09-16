@@ -52,6 +52,14 @@
 
 
 /* Page */
+@media only screen and (max-width: 1200px) {
+  .page-home {  
+    background-image: url(../img/wir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 .vg-page {
   position: relative;
   display: block;
