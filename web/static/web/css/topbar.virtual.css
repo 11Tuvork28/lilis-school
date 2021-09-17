@@ -67,7 +67,7 @@
   z-index: 99;
   background-image: url(../img/wir.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .page-home::before {
