@@ -12,7 +12,7 @@
     <title>Lilis School</title>
 
     <link rel="shortcut icon" href="{% static 'web/favicon.ico' %}" />
-
+    <link href="../../static/web/fonts/FontAwesome/css/all.css" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
@@ -205,10 +205,10 @@
               <p>Folge uns</p>
               <hr class="divider" />
               <ul class="list-unstyled">
-                <li><a href="#">{{ Kontakt.Instagram }}</a></li>
-                <li><a href="#">{{ Kontakt.Facebook }}</a></li>
-                <li><a href="#">{{ Kontakt.Youtube }}</a></li>
-                <li><a href="#">{{ Kontakt.Paypal }}</a></li>
+                <li><a href="https://www.instagram.com/lilis.schools/" target="_blank"><span class="ti-instagram"></span> {{ Kontakt.Instagram }}</a></li>
+                <li><a href="https://www.facebook.com/lilis.schools"><span class="ti-facebook"></span>{{ Kontakt.Facebook }}</a></li>
+                <li><a href="https://www.paypal.com/paypalme/lilisschools/"><i class="fab fa-paypal"></i>{{ Kontakt.Paypal }}</a></li>
+                <li><a href="#">{{ Kontakt.Youtube }}</a></li>             
               </ul>
             </div>
           </div>
