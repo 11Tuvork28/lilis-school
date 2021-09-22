@@ -50,37 +50,6 @@
   </div>
 </div>
 
-<div class="vg-page page-blog" id="blog">
-  <div class="container py-5">
-    <div class="text-center">
-      <div class="badge badge-subhead wow fadeInUp">Neues</div>
-    </div>
-    <h2 class="text-center fw-normal wow fadeInUp">Neuster Beitrag</h2>
-    <div class="row post-grid">
-      {% for post in blogs %}
-      <div class="col-md-6 col-lg-4 wow fadeInUp">
-        <div class="card">
-          <div class="img-place">
-            <img src="{{ post.Bild1.url }}" alt="" />
-          </div>
-          <div class="img-place">
-            <img src="{{ post.Bild2.url }}" alt="" />
-          </div>
-          <div class="caption">
-            <a href="{% url "blog" blog_id=post.id %}#blog" class="post-title">{{ post.HeadLine }}</a>
-            <span class="post-date"
-              ><span class="sr-only">Veröffentlicht</span> {{ post.pub_date }}
-            </span>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-      <div class="col-12 text-center py-3 wow fadeInUp">
-        <a href="{% url 'blog' %}" class="btn btn-theme">Alle Beiträge</a>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- End blog -->
 <div class="vg-page" id="RoadMap">
   <div class="container pt-5">
@@ -121,6 +90,39 @@
   </div>
 </div>
 
+
+<div class="vg-page page-blog" id="blog">
+  <div class="container py-5">
+    <div class="text-center">
+      <div class="badge badge-subhead wow fadeInUp">Sponsoren</div>
+    </div>
+    <h2 class="text-center fw-normal wow fadeInUp">Danke an...</h2>
+    <div class="row post-grid">
+      {% for post in blogs %}
+      <div class="col-md-6 col-lg-4 wow fadeInUp">
+        <div class="card">
+          <div class="img-place">
+            <img src="{{ post.Bild1.url }}" alt="" />
+          </div>
+          <div class="img-place">
+            <img src="{{ post.Bild2.url }}" alt="" />
+          </div>
+          <div class="caption">
+            <a href="{% url "blog" blog_id=post.id %}#blog" class="post-title">{{ post.HeadLine }}</a>
+            <span class="post-date"
+              ><span class="sr-only">Veröffentlicht</span> {{ post.pub_date }}
+            </span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="col-12 text-center py-3 wow fadeInUp">
+        <!--<a href="{% url 'blog' %}" class="btn btn-theme">Danke an...</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="vg-page page-testimonial" id="media">
   <div class="container">
     <div class="text-center">
@@ -129,8 +131,11 @@
     <h2 class="text-center fw-normal wow fadeInUp">
       Hier können Sie einige Fotos sehen
     </h2>
+    <div class="col-12 text-center py-3 wow fadeInUp">
+      <a href="{% url 'blog' %}" class="btn btn-theme">Alle Fotos</a>
+    </div>
     <div class="row justify-content-center mt-5 wow fadeInUp">
-      <div class="col-md-9">
+     <div class="col-md-9">
         <div class="owl-carousel testi-carousel owl-loaded owl-drag">
           <div class="owl-stage-outer">
             <div

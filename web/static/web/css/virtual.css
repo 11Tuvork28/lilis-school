@@ -533,7 +533,6 @@ a:hover, a:active {
 
 @media (min-width: 1200px) {
     .navbar-expand-xl .navbar-nav .nav-link {
-        padding-left: 16px;
         padding-right: 16px;
     }
 }
