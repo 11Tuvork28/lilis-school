@@ -250,7 +250,7 @@ a:hover, a:active {
     text-align: center;
     font-size: 18px;
     border-radius: 50%;
-    background-color: #52565c;
+    background-color: rgb(236 95 46 / 100%);
     color: #fff;
     visibility: hidden;
     cursor: pointer;
@@ -533,7 +533,6 @@ a:hover, a:active {
 
 @media (min-width: 1200px) {
     .navbar-expand-xl .navbar-nav .nav-link {
-        padding-left: 16px;
         padding-right: 16px;
     }
 }

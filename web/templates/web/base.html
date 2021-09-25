@@ -12,7 +12,7 @@
     <title>Lilis School</title>
 
     <link rel="shortcut icon" href="{% static 'web/favicon.ico' %}" />
-
+    <link href="../../static/web/fonts/FontAwesome/css/all.css" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
@@ -84,7 +84,7 @@
           data-offset="500"
         >
           <div class="container">
-            <a href="{% url 'index' %}" class="navbar-brand">Lilis-School</a>
+            <a href="{% url 'index' %}" class="navbar-brand"><img class="LogoImg" src="../../static/web/img/LOGO evtl..jpg"></a>
             <button
               class="navbar-toggler"
               data-toggle="collapse"
@@ -98,19 +98,14 @@
               <ul class="navbar-nav items-center text-center">
                 <li class="nav-item active">
                   <a href="{% url 'index' %}#home" class="nav-link" data-animate="scrolling"
-                    >Home</a
+                    >Home + News</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="{% url 'index' %}#about" class="nav-link" data-animate="scrolling"
                     >Wer & wo sind wir?</a
                   >
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#blog" class="nav-link" data-animate="scrolling"
-                    >News</a
-                  >
-                </li>
+                </li>               
                 <li class="nav-item">
                   <a href="{% url 'index' %}#RoadMap" class="nav-link" data-animate="scrolling"
                     >Was ist unser Ziel?</a
@@ -119,6 +114,11 @@
                 <li class="nav-item">
                   <a href="{% url 'index' %}#helping" class="nav-link" data-animate="scrolling"
                     >Wie können Sie helfen</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'index' %}#blog" class="nav-link" data-animate="scrolling"
+                    >Danke an</a
                   >
                 </li>
                 <li class="nav-item">
@@ -136,17 +136,12 @@
               <ul class="navbar-nav items-center text-center">
                 <li class="nav-item active">
                   <a href="#home" class="nav-link" data-animate="scrolling"
-                    >Home</a
+                    >Home + News</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="#about" class="nav-link" data-animate="scrolling"
                     >Wer & wo sind wir?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#blog" class="nav-link" data-animate="scrolling"
-                    >News</a
                   >
                 </li>
                 <li class="nav-item">
@@ -157,6 +152,11 @@
                 <li class="nav-item">
                   <a href="#helping" class="nav-link" data-animate="scrolling"
                     >Wie können Sie helfen</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#blog" class="nav-link" data-animate="scrolling"
+                    >Danke an</a
                   >
                 </li>
                 <li class="nav-item">
@@ -179,6 +179,7 @@
       <!-- Caption header -->
       <div class="caption-header text-center wow zoomInDown">
         <h5 class="fw-normal">Willkommen</h5>
+        <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1 class="fw-light mb-4">
           Wir sind das <b class="fg-theme">Lilis School</b> Projekt
         </h1>
@@ -193,7 +194,7 @@
         <div class="row">
           <div class="col-lg-4 py-3">
             <div class="footer-info">
-              <p>Inpressum</p>
+              <p>Impressum</p>
               <hr class="divider" />
               <p class="fs-large fg-white">
                 
@@ -205,10 +206,10 @@
               <p>Folge uns</p>
               <hr class="divider" />
               <ul class="list-unstyled">
-                <li><a href="#">{{ Kontakt.Instagram }}</a></li>
-                <li><a href="#">{{ Kontakt.Facebook }}</a></li>
-                <li><a href="#">{{ Kontakt.Youtube }}</a></li>
-                <li><a href="#">{{ Kontakt.Paypal }}</a></li>
+                <li><a href="https://www.instagram.com/lilis.schools/" target="_blank"><span class="ti-instagram"></span> {{ Kontakt.Instagram }}</a></li>
+                <li><a href="https://www.facebook.com/lilis.schools"><span class="ti-facebook"></span>{{ Kontakt.Facebook }}</a></li>
+                <li><a href="https://www.paypal.com/paypalme/lilisschools/"><i class="fab fa-paypal"></i>{{ Kontakt.Paypal }}</a></li>
+                <li><a href="#">{{ Kontakt.Youtube }}</a></li>             
               </ul>
             </div>
           </div>
