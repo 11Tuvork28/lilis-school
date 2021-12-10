@@ -179,7 +179,9 @@
       <!-- Caption header -->
       <div class="caption-header text-center wow zoomInDown">
         <h5 class="fw-normal">Willkommen</h5>
-        <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% if request.resolver_match.url_name != "blog" %}
+          <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endif %}
         <h1 class="fw-light mb-4">
           Wir sind das <b class="fg-theme">Lilis School</b> Projekt
         </h1>
