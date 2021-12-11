@@ -15,25 +15,21 @@
             class="rounded-circle"
             src="{% static 'web/favicon.ico' %}"
             alt="A picture of a heart"
-          />-lich Willkommen in Lilis School
+          />-lich Willkommen
         </h2>
-        <h5 class="fg-theme mb-3">Hilfsprojekt Lilis-School</h5>
+        <h5 class="fg-theme mb-3 theme-red">DANKE für den Besuch auf unserer Internetseite!</h5>
         <p class="text-muted text-left">
-          & DANKE für den Besuch auf unserer Internetseite!<br />Wir sind
-          aktuell „im Aufbau“, sowohl von dieser Seite, als auch vom
-          Schulgebäude in der Dominikanischen Republik. Beim alten Gemäuer aus
-          dem Jahre 1992 regnete es zuletzt unter anderem an einigen Stellen
-          durch das Dach, ging die eine Toilette nicht mehr richtig, war
-          wenig/er Raum & nun werden dank der Reiner-Meutsch-Stiftung FLY & HELP
-          sowie einem Haupt-Spendenpartner dieses großartige Geschenk erhalten &
-          damit noch mehr Kinder die Chance auf eine bessere Zukunft.
+          Wir sind ein im Mai 2021 frisch gegründeter und „gemeinnütziger“ Verein, um eine 1992
+          von „Dona“ Lili gegründete und erfolgreich geleitete kleine Schule in der Dominikanischen
+          Republik zu erhalten. Mit guter Bildungsarbeit werden den Kindern aus diesem ärmeren
+          Vorort von Puerto Plata weiterhin bessere Zukunftschancen mitgegeben.
         </p>
       </div>
       {% for text in WilkommensText %}
       <div class="col-lg-5  wow fadeInRight">
         <h2 class="fw-light">{{ text.HeadLine }}</h2>
         <h5 class="fg-theme mb-3">{{ text.SmallHeadLine }}</h5>
-              <p class="text-muted  text-left">{{ text.Text }}</p>
+              <p class="text-muted  text-left">{{ text.Text | linebreaks }}</p>
       </div>
       {% if  text.Bild %}
       <div class="col-lg-6 offset-lg-1 py-3">
@@ -109,6 +105,7 @@
           </div>
           <div class="caption">
             <a href="{% url "blog" blog_id=post.id %}#blog" class="post-title">{{ post.HeadLine }}</a>
+            <h5 class="fg-theme mb-3 theme-red">{{ post.smallHeadLine }}</h5>
             <span class="post-date"
               ><span class="sr-only">Veröffentlicht</span> {{ post.pub_date }}
             </span>
@@ -188,7 +185,7 @@
       Setzen Sie sich mit uns in Verbindung
     </h2>
     <h3 class="text-center fs-small wow fadeInUp mt-3">
-      Sie erhalten ein Kopie per Email
+      Sie erhalten eine Kopie per Email
     </h3>
     <div class="col">
       <form class="vg-contact-form form-row" action="" method="POST">

@@ -108,22 +108,22 @@
                 </li>               
                 <li class="nav-item">
                   <a href="{% url 'index' %}#RoadMap" class="nav-link" data-animate="scrolling"
-                    >Was ist unser Ziel?</a
+                    >Was sind unser Ziele?</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="{% url 'index' %}#helping" class="nav-link" data-animate="scrolling"
-                    >Wie können Sie helfen</a
+                    >Wie können Sie helfen?</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="{% url 'index' %}#blog" class="nav-link" data-animate="scrolling"
-                    >Danke an</a
+                    >Danke an...</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="{% url 'index' %}#media" class="nav-link" data-animate="scrolling"
-                    >Fotos & Videos & Presse</a
+                    >Fotos, Videos & Presse</a
                   >
                 </li>
                 <li class="nav-item">
@@ -146,22 +146,22 @@
                 </li>
                 <li class="nav-item">
                   <a href="#RoadMap" class="nav-link" data-animate="scrolling"
-                    >Was ist unser Ziel?</a
+                    >Was sind unser Ziele?</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="#helping" class="nav-link" data-animate="scrolling"
-                    >Wie können Sie helfen</a
+                    >Wie können Sie helfen?</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="#blog" class="nav-link" data-animate="scrolling"
-                    >Danke an</a
+                    >Danke an...</a
                   >
                 </li>
                 <li class="nav-item">
                   <a href="#media" class="nav-link" data-animate="scrolling"
-                    >Fotos & Videos </a
+                    >Fotos, Videos & Presse </a
                   >
                 </li>
                 <li class="nav-item">
@@ -178,10 +178,12 @@
       <!-- End Navbar -->
       <!-- Caption header -->
       <div class="caption-header text-center wow zoomInDown">
-        <h5 class="fw-normal">Willkommen</h5>
-        <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5 class="fw-normal">Schauen Sie bitte direkt mal unser Info-Video!</h5>
+        {% if request.resolver_match.url_name != "blog" %}
+          <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endif %}
         <h1 class="fw-light mb-4">
-          Wir sind das <b class="fg-theme">Lilis School</b> Projekt
+          Wir sind das <b class="fg-theme">Lilis School</b> Projekt.
         </h1>
       </div>
       <!-- End Caption header -->
