@@ -17,21 +17,24 @@
             alt="A picture of a heart"
           />-lich Willkommen
         </h2>
-        <h5 class="fg-theme mb-3 theme-red">DANKE für den Besuch auf unserer Internetseite!</h5>
+        <h5 class="fg-theme mb-3 theme-red">
+          DANKE für den Besuch auf unserer Internetseite!
+        </h5>
         <p class="text-muted text-left">
-          Wir sind ein im Mai 2021 frisch gegründeter und „gemeinnütziger“ Verein, um eine 1992
-          von „Dona“ Lili gegründete und erfolgreich geleitete kleine Schule in der Dominikanischen
-          Republik zu erhalten. Mit guter Bildungsarbeit werden den Kindern aus diesem ärmeren
-          Vorort von Puerto Plata weiterhin bessere Zukunftschancen mitgegeben.
+          Wir sind ein im Mai 2021 frisch gegründeter und „gemeinnütziger“
+          Verein, um eine 1992 von „Dona“ Lili gegründete und erfolgreich
+          geleitete kleine Schule in der Dominikanischen Republik zu erhalten.
+          Mit guter Bildungsarbeit werden den Kindern aus diesem ärmeren Vorort
+          von Puerto Plata weiterhin bessere Zukunftschancen mitgegeben.
         </p>
       </div>
       {% for text in WilkommensText %}
-      <div class="col-lg-5  wow fadeInRight">
+      <div class="col-lg-5 wow fadeInRight">
         <h2 class="fw-light">{{ text.HeadLine }}</h2>
         <h5 class="fg-theme mb-3">{{ text.SmallHeadLine }}</h5>
-              <p class="text-muted  text-left">{{ text.Text | linebreaks }}</p>
+        <p class="text-muted text-left">{{ text.Text | linebreaks }}</p>
       </div>
-      {% if  text.Bild %}
+      {% if text.Bild %}
       <div class="col-lg-6 offset-lg-1 py-3">
         <img
           class="img-place wow fadeInUp"
@@ -39,9 +42,36 @@
           alt="{{ text.BildBeschreibung }}"
         />
       </div>
-      {% endif %}
-
-      {% endfor %}
+      {% endif %} {% endfor %}
+    </div>
+    <div class="col-lg-5 wow fadeInRight">
+      <h2 class="fw-light"></h2>
+      <h5 class="fg-theme mb-3"></h5>
+      <p class="text-muted text-left">
+        Durch die unglaublich „glückliche Idee“ unseres Mitglieds Tobi und
+        seiner Kontaktaufnahme zur „Reiner-Meutsch-Stiftung - FLY & HELP“ und
+        damit einem weiteren Großsponsor (= 90.000 €uro), wird den Kindern
+        gerade ein unglaubliches Geschenk gemacht. Es entsteht ein neues,
+        größeres Schulgebäude. Das alte Gemäuer bestand nur aus einem
+        Erdgeschoss mit zwei Klassenräumen, es regnete zuletzt an einigen
+        Stellen durch das Dach und die einzige Toilette klemmte. Eine Sanierung
+        rechnete sich nicht mehr. Bald befinden sich sechs Klassenräume mit
+        neuerer Technik und mehreren Toiletten auf zwei Ebenen. Für die 2. Etage
+        mit einem Multifunktionsraum und einem umzäunten Schulhof auf dem Dach
+        wird allerdings eine Restsumme von nochmals ca. 27.000 €uro benötigt.
+        Leider wird dieses Geld schnell, das heißt bis Anfang Februar 2022,
+        benötigt. DIE KINDER BRAUCHEN JETZT ALSO DRINGEND IHRE FINANZIELLE
+        HILF€! Dafür haben wir gerade eine CROWDFUNDING-AKTION gestartet.
+        Klicken Sie bitte auf den Link bzw. scannen Sie den QR-Code:
+        <a
+          href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht"
+          >Betterplace</a
+        >
+        DIE KINDER BRAUCHEN JETZT UND DANACH ABER AUCH REGELMÄßIG HILFE! Die
+        monatlichen Lohnkosten für die drei Lehrerinnen müssen unbedingt
+        weiterbezahlt werden. Mehr dazu unter dem Punkt:
+        <a href="#helping">„Wie kann ich helfen?“</a>
+      </p>
     </div>
   </div>
 </div>
@@ -60,7 +90,10 @@
           <li>
             <div class="details">
               <h5>{{ goal.Headline }}</h5>
-              <p>{{ goal.Beschreibung }}</p>
+              <p>
+                {{ goal.Beschreibung }}
+                <a href="https://lilisschools.org/files/Satzung.pdf"></a>
+              </p>
             </div>
           </li>
           {% endfor %}
@@ -80,11 +113,82 @@
       Wie können Sie helfen?
     </h2>
     <div class="row justify-content-center mt-5 wow fadeInUp">
-      <div class="col-md-9"></div>
+      <div class="col-md-3">
+        <div class="col-md-9">
+          <p class="text-left">
+            Momentan wünschen wir uns am meisten, dass möglichst viele beim
+            Crowdfunding für die Fertigstellung des ganzen Gebäudes spenden.
+            Dann können wir es gemeinsam und noch rechtzeitig schaffen, die
+            komplette Schule im März zu eröffnen.
+            <a
+              href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht"
+              >Betterplace</a
+            ><br /><br />
+            Aber um das Schulleben dort fortführen zu können, werden regelmäßige
+            Spenden benötigt, damit die monatlichen Fixkosten von etwa 700 €uro
+            (u.a. für die drei Löhne, Strom, Wasser, Versicherung,
+            Müllentsorgung) gedeckt werden können. Das COLEGIO ENRIQUILLO ist
+            eine privat gegründete und rein durch Eltern finanzierte Schule, in
+            einem ärmeren Viertel, in dem finanzielle Mittel per se sehr
+            begrenzt sind.<br /><br />
+            Durch den coronabedingten Unterrichtsausfall und den somit fehlenden
+            Beitragszahlungen stand die Schule schon öfter vor dem Aus.
+            Demzufolge braucht es auch immer noch genügend regelmäßige
+            Spender/innen. Im Grunde sind wir gerade erst „am Start“ und
+            befinden uns im Aufbau aktiver Partnerschaften: mit der
+            Gesamtschule, Privatpersonen und Gewerbetreibenden.<br /><br />
+            Wenn Sie uns helfen und spenden wollen, schreiben Sie bitte unter
+            dem „Verwendungszweck“ entweder „Fixkosten“ oder auch „Schulbau“
+            (falls sie nicht über die Crowdfunding-Seite spenden wollen) oder
+            gar nichts, sodass wir selbst entscheiden können, wofür das Geld zu
+            diesem Zeitpunkt dringender gebraucht wird. Hilfreich ist es auch,
+            wenn sie es viral machen und es Freunden und Bekannten erzählen. Als
+            Dankeschön erhalten sie garantiert leuchtende Kinderaugen!
+            <br /><br />
+            Da wir als „gemeinnütziger“ Verein vom Finanzamt anerkannt sind,
+            bekommen Sie gerne eine Spendenquittung bis Ende Februar, wenn Sie
+            uns ebenfalls Ihren Namen und Ihre Postadresse unter dem
+            Verwendungszweck mitteilen.
+
+            <br />
+            Unsere Kontodaten sind: <br />
+            Kontoinhaber: <br />Förderverein für Lilis Schools in der
+            Dominikanischen Republik e.V. <br />
+            IBAN: DE41 3545 0000 1101 1127 77
+
+            <br />
+            BIC: WELADED1MOR
+
+            <br />
+          </p>
+          <p class="text-left">
+            Schneller und leichter gehen Überweisungen auch mit unserem
+            PayPal-Konto. Dafür benutzen Sie bitte nur folgende Email-Adresse:
+            spende@lilisschools.org
+            <br />
+            Wenn Sie darüber hinaus ein offizielles sogenanntes „ordentliches-“
+            oder ein „Fördermitglied“ werden wollen, wäre das das Schönste. Sie
+            könnten aktiv(er) mitmachen und wir können besser mit Ihnen rechnen.
+            <br />
+          </p>
+          <p class="">
+            Dazu laden Sie bitte folgenden Mitglieds- und Förderantrag herunter,
+            füllen diesen aus und schicken ihn schließlich per Post an:
+            <br />
+            Aracelis Kossiak
+            <br />
+            Niederrheinallee 317
+            <br />
+            47506 Neukirchen-Vluyn
+            <br />
+            Sie können ihn auch einscannen und per Email senden:
+            aracelis.kossiak@icloud.com
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 
 <div class="vg-page page-blog" id="blog">
   <div class="container py-5">
@@ -92,28 +196,24 @@
       <div class="badge badge-subhead wow fadeInUp">Sponsoren</div>
     </div>
     <h2 class="text-center fw-normal wow fadeInUp">Danke an...</h2>
-    <div class="row post-grid">
-      {% for post in blogs %}
-      <div class="col-md-6 col-lg-4 wow fadeInUp">
-        <div class="card">
-          <div class="img-place">
-            <img src="{{ post.Bild1.url }}" alt="" />
-          </div>
-          <div class="img-place">
-            <img src="{{ post.Bild2.url }}" alt="" />
-          </div>
-          <div class="caption">
-            <a href="{% url "blog" blog_id=post.id %}#blog" class="post-title">{{ post.HeadLine }}</a>
-            <h5 class="fg-theme mb-3 theme-red">{{ post.smallHeadLine }}</h5>
-            <span class="post-date"
-              ><span class="sr-only">Veröffentlicht</span> {{ post.pub_date }}
-            </span>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-10 wow fadeInUp">
+        <p class="text-muted text-left">
+          ...alle bisherigen (un)regelmäßigen und zukünftigen Spender/innen, vor
+          allem an:
+        </p>
       </div>
-      {% endfor %}
-      <div class="col-12 text-center py-3 wow fadeInUp">
-        <!--<a href="{% url 'blog' %}" class="btn btn-theme">Danke an...</a>-->
+      <div class="col-lg-4 img-place">
+        <img src="/pictures/FLY_and_HELP.jpg" alt="" />
+      </div>
+      <div class="col-lg-4 img-place">
+        <img src="/pictures/GE_NV_Spendenlauf.jpg" alt="" />
+      </div>
+      <div class="col-lg-4 img-place">
+        <img
+          src="/pictures/Sparkasse_am_Niederrhein_Logo.jpg"
+          alt="Sparkassen Logo"
+        />
       </div>
     </div>
   </div>
@@ -131,7 +231,7 @@
       <a href="{% url 'blog' %}" class="btn btn-theme">Alle Fotos</a>
     </div>
     <div class="row justify-content-center mt-5 wow fadeInUp">
-     <div class="col-md-9">
+      <div class="col-md-9">
         <div class="owl-carousel testi-carousel owl-loaded owl-drag">
           <div class="owl-stage-outer">
             <div
@@ -188,16 +288,14 @@
     </h3>
     <div class="col">
       <form class="vg-contact-form form-row" action="" method="POST">
-            {% csrf_token %}
-          <div class="col-12 mt-3 wow fadeInUp">
-           {{ form.sender_name }}
-          </div>
-          <div class="col-6 mt-3 wow fadeInUp">{{ form.email }}</div>
-          <div class="col-6 mt-3 wow fadeInUp">{{ form.subject }}</div>
-          <div class="col-12 mt-3 wow fadeInUp">{{ form.message }}</div>
-          <button type="submit" class="btn btn-theme mt-3 wow fadeInUp mx-auto">
-            Senden
-          </button>
+        {% csrf_token %}
+        <div class="col-12 mt-3 wow fadeInUp">{{ form.sender_name }}</div>
+        <div class="col-6 mt-3 wow fadeInUp">{{ form.email }}</div>
+        <div class="col-6 mt-3 wow fadeInUp">{{ form.subject }}</div>
+        <div class="col-12 mt-3 wow fadeInUp">{{ form.message }}</div>
+        <button type="submit" class="btn btn-theme mt-3 wow fadeInUp mx-auto">
+          Senden
+        </button>
       </form>
     </div>
   </div>
