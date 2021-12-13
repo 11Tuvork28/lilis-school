@@ -17,7 +17,7 @@ def index(request):
             message = form.cleaned_data['message']
             email_to = form.cleaned_data['email']
             try:
-                send_mail(subject, message, from_email, [email_to,])
+                send_mail(subject, message, from_email, [email_to,from_email])
             except BadHeaderError:
                 pass
             redirect('index')
