@@ -2,30 +2,29 @@
 <div class="vg-page page-about" id="about">
   <div class="container py-5">
     <div class="row">
-      <div class="col-lg-5 py-3">
-        <img
-          class="img-place wow fadeInUp"
-          src="{% static 'web/img/LILIS_SCHOOL.jpg' %}"
-          alt="A picture of a group of childs in front of the old school building"
-        />
+      <div class="col-lg-5 display-flex justify-content-center  py-3">
+        <img class="img-place wow fadeInUp" src="{% static 'web/img/LILIS_SCHOOL.jpg' %}"
+          alt="A picture of a group of childs in front of the old school building" />
       </div>
       <div class="col-lg-6 offset-lg-1 wow fadeInRight">
         <h2 class="fw-light">
-          <img
-            class="rounded-circle"
-            src="{% static 'web/favicon.ico' %}"
-            alt="A picture of a heart"
-          />-lich Willkommen
+          <img class="rounded-circle" src="{% static 'web/favicon.ico' %}" alt="A picture of a heart" />-lich Willkommen
         </h2>
         <h5 class="fg-theme mb-3 theme-red">
           DANKE für den Besuch auf unserer Internetseite!
         </h5>
-        <p class="text-muted text-left">
+        <p class="text-justify">
           Wir sind ein im Mai 2021 frisch gegründeter und „gemeinnütziger“
           Verein, um eine 1992 von „Dona“ Lili gegründete und erfolgreich
           geleitete kleine Schule in der Dominikanischen Republik zu erhalten.
           Mit guter Bildungsarbeit werden den Kindern aus diesem ärmeren Vorort
           von Puerto Plata weiterhin bessere Zukunftschancen mitgegeben.
+          <br><br>
+          Dies war damals schon nicht leicht, aber es ist durch die Corona/Politik bzw. den Folgen und nun fehlenden
+          Elternbeiträgen noch weitaus schwieriger geworden. Die Anzahl der Schüler/innen und Klassenstufen hat sich
+          leider immer weiter verringert, ABER es besteht begründete Hoffnung, dass es nun rechtzeitig wieder aufwärts
+          geht…
+
         </p>
       </div>
       {% for text in WilkommensText %}
@@ -36,11 +35,7 @@
       </div>
       {% if text.Bild %}
       <div class="col-lg-6 offset-lg-1 py-3">
-        <img
-          class="img-place wow fadeInUp"
-          src="{{ text.Bild.url }}"
-          alt="{{ text.BildBeschreibung }}"
-        />
+        <img class="img-place wow fadeInUp" src="{{ text.Bild.url }}" alt="{{ text.BildBeschreibung }}" />
       </div>
       {% endif %} {% endfor %}
       <div class="col-lg-5 wow fadeInRight">
@@ -64,9 +59,7 @@
           Klicken Sie bitte auf den Link bzw. scannen Sie den QR-Code:
           <br>
           <a
-            href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht"
-            >Betterplace</a
-          ><br>
+            href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht">Betterplace</a><br>
           DIE KINDER BRAUCHEN JETZT UND DANACH ABER AUCH REGELMÄßIG HILFE! Die
           monatlichen Lohnkosten für die drei Lehrerinnen müssen unbedingt
           weiterbezahlt werden. Mehr dazu unter dem Punkt:
@@ -74,11 +67,7 @@
         </p>
       </div>
       <div class="col-lg-6 offset-lg-1 py-3">
-        <img
-          class="img-place wow fadeInUp"
-          src="/pictures/Gebaeude.jpg"
-          alt=""
-        />
+        <img class="img-place wow fadeInUp" src="/pictures/Gebaeude.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -128,9 +117,7 @@
           können wir es gemeinsam und noch rechtzeitig schaffen, die komplette
           Schule im März zu eröffnen.
           <a
-            href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht"
-            >Betterplace</a
-          ><br /><br />
+            href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht">Betterplace</a><br /><br />
           Aber um das Schulleben dort fortführen zu können, werden regelmäßige
           Spenden benötigt, damit die monatlichen Fixkosten von etwa 700 €uro
           (u.a. für die drei Löhne, Strom, Wasser, Versicherung, Müllentsorgung)
@@ -178,7 +165,8 @@
           <br />
         </p>
         <p class="">
-          Dazu laden Sie bitte <a href="/pictures/Mitgliedsantrag_Lilis_School.docx"> folgenden Mitglieds- und Förderantrag</a> herunter,
+          Dazu laden Sie bitte <a href="/pictures/Mitgliedsantrag_Lilis_School.docx"> folgenden Mitglieds- und
+            Förderantrag</a> herunter,
           füllen diesen aus und schicken ihn schließlich per Post an:
           <br />
           Aracelis Kossiak
@@ -215,10 +203,7 @@
         <img src="/pictures/GE_NV_Spendenlauf.jpg" alt="" />
       </div>
       <div class="col-lg-4 img-place">
-        <img
-          src="/pictures/Sparkasse_am_Niederrhein_Logo.jpg"
-          alt="Sparkassen Logo"
-        />
+        <img src="/pictures/Sparkasse_am_Niederrhein_Logo.jpg" alt="Sparkassen Logo" />
       </div>
     </div>
   </div>
@@ -239,14 +224,11 @@
       <div class="col-md-9">
         <div class="owl-carousel testi-carousel owl-loaded owl-drag">
           <div class="owl-stage-outer">
-            <div
-              class="owl-stage"
-              style="
+            <div class="owl-stage" style="
                 transform: translate3d(-1020px, 0px, 0px);
                 transition: all 0.25s ease 0s;
                 width: 3060px;
-              "
-            >
+              ">
               {% for item in Fotos %}
               <div class="owl-item" style="width: 510px">
                 <div class="item">
@@ -269,8 +251,7 @@
           </div>
           <div class="owl-nav">
             <button type="button" role="presentation" class="owl-prev">
-              <span aria-label="Previous">‹</span></button
-            ><button type="button" role="presentation" class="owl-next">
+              <span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next">
               <span aria-label="Next">›</span>
             </button>
           </div>
