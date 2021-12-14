@@ -31,7 +31,9 @@
       <div class="col-lg-5 wow fadeInRight">
         <h2 class="fw-light">{{ text.HeadLine }}</h2>
         <h5 class="fg-theme mb-3">{{ text.SmallHeadLine }}</h5>
-        <p class="text-muted text-justify">{{ text.Text | linebreaks }}</p>
+        <p class="text-justify">
+          {{ text.Text | linebreaksbr }}
+        </p>
       </div>
       {% if text.Bild %}
       <div class="col-lg-6 offset-lg-1 py-3">
@@ -64,7 +66,7 @@
           <br>
           <a
             href="https://www.betterplace.org/de/projects/99703-lilis-school-soll-fertigwerden-spender-fuer-letztes-stockwerk-gesucht">Betterplace</a><br>
-          <br><br>
+          <br>
           DIE KINDER BRAUCHEN JETZT UND DANACH ABER AUCH REGELMÄßIG HILF€! Die monatlichen Lohnkosten für die drei
           Lehrerinnen
           müssen unbedingt weiterbezahlt werden. Mehr dazu unter dem Punkt:
