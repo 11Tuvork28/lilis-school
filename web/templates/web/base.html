@@ -1,248 +1,181 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="copyright" content="MACode ID, https://www.macodeid.com/" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Lilis School</title>
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/" />
 
-    <link rel="shortcut icon" href="{% static 'web/favicon.ico' %}" />
-    <link href="../../static/web/fonts/FontAwesome/css/all.css" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/css/themify-icons.css' %}"
-    />
+  <title>Lilis School</title>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/css/bootstrap.css' %}"
-    />
+  <link rel="shortcut icon" href="{% static 'web/favicon.ico' %}" />
+  <link href="../../static/web/fonts/FontAwesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/themify-icons.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/vendor/animate/animate.css' %}"
-    />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/vendor/owl-carousel/owl.carousel.css' %}"
-    />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/vendor/animate/animate.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/vendor/perfect-scrollbar/css/perfect-scrollbar.css' %}"
-    />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/vendor/owl-carousel/owl.carousel.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/vendor/nice-select/css/nice-select.css' %}"
-    />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/vendor/perfect-scrollbar/css/perfect-scrollbar.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/vendor/fancybox/css/jquery.fancybox.min.css' %}"
-    />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/vendor/nice-select/css/nice-select.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/css/virtual.css' %}"
-    />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/vendor/fancybox/css/jquery.fancybox.min.css' %}" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'web/css/topbar.virtual.css' %}"
-    />
-  </head>
-  <body class="theme-red">
-    <!-- Back to top button -->
-    <div class="btn-back_to_top">
-      <span class="ti-arrow-up"></span>
-    </div>
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/virtual.css' %}" />
 
-    <div
-      class="vg-page page-home"
-      id="home" 
-    >
-      <!-- Navbar -->
-      <div class="container">
-        <div
-          class="navbar navbar-expand-xl navbar-dark sticky"
-          data-offset="500"
-        >
-          <div class="container">
-            <a href="{% url 'index' %}" class="navbar-brand"><img class="LogoImg" src="../../static/web/img/LOGO evtl..jpg"></a>
-            <button
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-              aria-expanded="true"
-            >
-              <span class="ti-menu"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main-navbar">
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/topbar.virtual.css' %}" />
+</head>
+
+<body class="theme-red">
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+
+  <div class="vg-page page-home" id="home">
+    <!-- Navbar -->
+    <div class="container">
+      <div class="navbar navbar-expand-xl navbar-dark sticky" data-offset="500">
+        <div class="container">
+          <a href="{% url 'index' %}" class="navbar-brand"><img class="LogoImg"
+              src="../../static/web/img/LOGO evtl..jpg"></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+            <span class="ti-menu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navbar">
             {% if request.resolver_match.url_name == "blog" %}
-              <ul class="navbar-nav items-center text-center">
-                <li class="nav-item active">
-                  <a href="{% url 'index' %}#home" class="nav-link" data-animate="scrolling"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#about" class="nav-link" data-animate="scrolling"
-                    >Wer & wo sind wir?</a
-                  >
-                </li>               
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#RoadMap" class="nav-link" data-animate="scrolling"
-                    >Was sind unser Ziele?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#helping" class="nav-link" data-animate="scrolling"
-                    >Wie können Sie helfen?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#blog" class="nav-link" data-animate="scrolling"
-                    >Danke an...</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#media" class="nav-link" data-animate="scrolling"
-                    >Fotos, Videos & Presse</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="{% url 'index' %}#contact" class="nav-link" data-animate="scrolling"
-                    >Kontakt</a
-                  >
-                </li>
-              </ul>
-              {% else %}
-              <ul class="navbar-nav items-center text-center">
-                <li class="nav-item active">
-                  <a href="#home" class="nav-link" data-animate="scrolling"
-                    >Home + News</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link" data-animate="scrolling"
-                    >Wer & wo sind wir?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#RoadMap" class="nav-link" data-animate="scrolling"
-                    >Was sind unser Ziele?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#helping" class="nav-link" data-animate="scrolling"
-                    >Wie können Sie helfen?</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#blog" class="nav-link" data-animate="scrolling"
-                    >Danke an...</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#media" class="nav-link" data-animate="scrolling"
-                    >Fotos, Videos & Presse </a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link" data-animate="scrolling"
-                    >Kontakt</a
-                  >
-                </li>
-              </ul>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Navbar -->
-      <!-- Caption header -->
-      <div class="caption-header text-center wow zoomInDown">
-        {% if request.resolver_match.url_name != "blog" %}
-        <h5 class="fw-normal">Schauen Sie bitte direkt mal unser Info-Video!</h5>
-          <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        {% endif %}
-        <h1 class="fw-light mb-4">
-          Wir sind das <b class="fg-theme">Lilis School</b> Projekt.
-        </h1>
-      </div>
-      <!-- End Caption header -->
-    </div>
-
-    {% block content %}{% endblock content %}
-    <!-- Footer -->
-    <div class="vg-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 py-3">
-            <div class="footer-info">
-              <p>Impressum & Kontakt Informationen</p>
-              <hr class="divider" />
-              <p class="fs-small fg-white">
-                Förderverein für Lilis Schools<br> in der Dominikanischen Republik e.V.
-                1.Vorsitzende: Aracelis Suero de Kossiak<br>
-                Niederrheinallee 317<br>
-                47506 Neukirchen-Vluyn<br>
-                Telefon: 02845-292730<br>
-                Mobil: 0176-32867118<br>
-                Email: Kontakt@lilisschools.org<br>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3">
-            <div class="float-lg-right">
-              <p>Folge uns</p>
-              <hr class="divider" />
-              <ul class="list-unstyled">
-                <li><a href="https://www.instagram.com/lilis.schools/" target="_blank"><span class="ti-instagram"></span></a></li>
-                <li><a href="https://www.facebook.com/lilis.schools"><span class="ti-facebook"></span></a></li>
-                <li><a href="https://www.paypal.com/paypalme/lilisschools/"><i class="fab fa-paypal"></i></a></li>
-                <li><a href="#">{{ Kontakt.Youtube }}</a></li>             
-              </ul>
-            </div>
+            <ul class="navbar-nav items-center text-center">
+              <li class="nav-item active">
+                <a href="{% url 'index' %}#home" class="nav-link" data-animate="scrolling">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}#about" class="nav-link" data-animate="scrolling">Wer & wo sind wir?</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}#RoadMap" class="nav-link" data-animate="scrolling">Was sind unser Ziele?</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}#helping" class="nav-link" data-animate="scrolling">Wie können Sie helfen?</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}#blog" class="nav-link" data-animate="scrolling">Danke an...</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}#media" class="nav-link" data-animate="scrolling">Fotos, Videos & Presse</a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}#contact" class="nav-link" data-animate="scrolling">Kontakt</a>
+              </li>
+            </ul>
+            {% else %}
+            <ul class="navbar-nav items-center text-center">
+              <li class="nav-item active">
+                <a href="#home" class="nav-link" data-animate="scrolling">Home + News</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" data-animate="scrolling">Wer & wo sind wir?</a>
+              </li>
+              <li class="nav-item">
+                <a href="#RoadMap" class="nav-link" data-animate="scrolling">Was sind unser Ziele?</a>
+              </li>
+              <li class="nav-item">
+                <a href="#helping" class="nav-link" data-animate="scrolling">Wie können Sie helfen?</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link" data-animate="scrolling">Danke an...</a>
+              </li>
+              <li class="nav-item">
+                <a href="#media" class="nav-link" data-animate="scrolling">Fotos, Videos & Presse </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link" data-animate="scrolling">Kontakt</a>
+              </li>
+            </ul>
+            {% endif %}
           </div>
         </div>
       </div>
     </div>
-    <!-- End footer -->
-    <script src="{% static 'web/js/jquery-3.5.1.min.js' %}"></script>
+    <!-- End Navbar -->
+    <!-- Caption header -->
+    <div class="caption-header text-center wow zoomInDown">
+      {% if request.resolver_match.url_name != "blog" %}
+      <h5 class="fw-normal">Schauen Sie bitte direkt mal unser Info-Video!</h5>
+      <iframe width="660" height="415" src="https://www.youtube-nocookie.com/embed/vgyGTV2sb-8"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      {% endif %}
+      <h1 class="fw-light mb-4">
+        Wir sind das <b class="fg-theme">Lilis School</b> Projekt.
+      </h1>
+    </div>
+    <!-- End Caption header -->
+  </div>
 
-    <script src="{% static 'web/js/bootstrap.bundle.min.js' %}"></script>
+  {% block content %}{% endblock content %}
+  <!-- Footer -->
+  <div class="vg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="footer-info">
+            <p>Kontaktinformationen</p>
+            <hr class="divider" />
+            <p class="fs-small fg-white">
+              Förderverein für Lilis Schools<br> in der Dominikanischen Republik e.V.
+              1.Vorsitzende: Aracelis Suero de Kossiak<br>
+              Niederrheinallee 317<br>
+              47506 Neukirchen-Vluyn<br>
+              Telefon: 02845-292730<br>
+              Mobil: 0176-32867118<br>
+              Email: Kontakt@lilisschools.org<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Folge uns auch auf</p>
+            <hr class="divider" />
+            <ul class="list-unstyled">
+              <li><a href="https://www.instagram.com/lilis.schools/" target="_blank"><span
+                    class="ti-instagram"></span></a></li>
+              <li><a href="https://www.facebook.com/lilis.schools"><span class="ti-facebook"></span></a></li>
+              <li><a href="https://www.paypal.com/paypalme/lilisschools/"><i class="fab fa-paypal"></i></a></li>
+              <li><a href="#">{{ Kontakt.Youtube }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End footer -->
+  <script src="{% static 'web/js/jquery-3.5.1.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/owl-carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'web/js/bootstrap.bundle.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'web/vendor/owl-carousel/owl.carousel.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/nice-select/js/jquery.nice-select.min.js' %}"></script>
+  <script src="{% static 'web/vendor/isotope/isotope.pkgd.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/fancybox/js/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'web/vendor/nice-select/js/jquery.nice-select.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/wow/wow.min.js' %}"></script>
+  <script src="{% static 'web/vendor/fancybox/js/jquery.fancybox.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/animateNumber/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'web/vendor/wow/wow.min.js' %}"></script>
 
-    <script src="{% static 'web/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'web/vendor/animateNumber/jquery.animateNumber.min.js' %}"></script>
 
-    <script src="{% static 'web/js/topbar-virtual.js' %}"></script>
-  </body>
+  <script src="{% static 'web/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+
+  <script src="{% static 'web/js/topbar-virtual.js' %}"></script>
+</body>
+
 </html>
